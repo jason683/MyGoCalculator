@@ -23,7 +23,7 @@ func TestCalculator(t *testing.T) {
 		})
 
 		g.It("should divide two numbers", func() {
-			g.Assert(Divide(29, 2)).Equal(float64(14.5))
+			g.Assert(Divide(29, 2)).Equal(float64(15))
 		})
 	})
 }
