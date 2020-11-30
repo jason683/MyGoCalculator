@@ -20,8 +20,6 @@ jobs:
         run: go version
       - name: Install Dependencies
         id: InstallDeps
-        run: |
-          go get github.com/tebeka/go2xunit
       - if: ${{success()}}
         run: |
           go get github.com/franela/goblin
