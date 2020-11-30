@@ -35,10 +35,4 @@ jobs:
           assignees: ${{github.actor}}
           labels: worflow-failed
           body: Workflow failed for commit ${{github.sha}} @ ${{github.ref}}        
-      - if: ${{failure()}}
-        name: "Set Assignee"
-        uses: Naturalclar/issue-action@v1.0.0
-        with:
-         keywords: '["Workflow"]'
-         assignees: '["jason683"]'
-         github-token: "${{ secrets.GITHUB_TOKEN }}"
+
