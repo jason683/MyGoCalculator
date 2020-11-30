@@ -35,6 +35,7 @@ jobs:
           assignees: ${{github.actor}}
           labels: worflow-failed
           body: Workflow failed for commit ${{github.sha}} @ ${{github.ref}}
+      - if: ${{failure()}}
       - if: startsWith(github.event.issue.title, 'ABC-') != 'true'
         name: Close Issue
         uses: peter-evans/close-issue@v1
