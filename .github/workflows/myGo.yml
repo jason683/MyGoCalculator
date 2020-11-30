@@ -35,5 +35,4 @@ jobs:
           assignees: ${{github.actor}}
           labels: worflow-failed
           body: Workflow failed for commit ${{github.sha}} @ ${{github.ref}}        
-      - name: Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v1.5
+
