@@ -20,7 +20,6 @@ jobs:
         run: go version
       - name: Install Dependencies
         id: InstallDeps
-      - if: ${{success()}}
         run: |
           go get github.com/franela/goblin
       - if: ${{success()}}
