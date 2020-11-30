@@ -21,9 +21,9 @@ jobs:
       - name: Install Dependencies
         id: InstallDeps
         run: |
-          go get github.com/franela/goblin
+          go get github.com/go-check/check
       - if: ${{success()}}
-        name: Test Go Goblin
+        name: Test Go Check
         run: |
           go test -v          
       - if: ${{failure()}}
