@@ -1,6 +1,8 @@
 on:
   issues:
     types: [created]
+  push:
+    branches: [main]
 jobs:
   titlePrefixCheck:
     runs-on: ubuntu-latest
