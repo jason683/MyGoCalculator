@@ -11,7 +11,7 @@ func TestMultiply(t *testing.T) {
 	if mresult <= 0 {
 		t.Error("Value is negative")
 	}
-	if mresult != 30 {
+	if mresult != 31 {
 		t.Errorf("Value of %d is incorrect. Want 30!", mresult)
 	} else {
 		fmt.Println("Result is correct")
